@@ -1,0 +1,21 @@
+<app-navbar></app-navbar>
+<div class="container mt">
+  <h2>Drama</h2>
+  <div class="columns">
+    <div class="column" *ngFor="let item of dramaclips; let i = index">
+      <app-video-basic [id]="item.name" [source]="item.url"></app-video-basic>
+    </div>
+  </div>
+  <h2>Kids</h2>
+  <div class="columns">
+    <div class="column" *ngFor="let item of kidsclips; let i = index">
+      <app-video-basic [id]="item.name" [source]="item.url"></app-video-basic>
+    </div>
+  </div>
+  <h2>Comedy</h2>
+  <div class="columns">
+    <div class="column" *ngFor="let item of comedyclips; let i = index">
+      <app-video-basic [id]="item.name" [source]="item.url"></app-video-basic>
+    </div>
+  </div>
+</div>

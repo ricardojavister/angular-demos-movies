@@ -1,0 +1,55 @@
+/* You can add global styles to this file, and also import other style files */
+@import "bulma/css/bulma.css";
+html {
+  background-color: #000000;
+  body {
+    background-color: #000000;
+    .container {
+      width: 1620px;
+      h2 {
+        font-size: 1.4vw;
+        display: block;
+        color: #ffffff;
+        margin-bottom: 3px;
+      }
+      nav {
+        &.navbar {
+          background-color: #000000;
+          .navbar-menu {
+            .navbar-item {
+              a {
+                color: #ffffff;
+
+                &:hover {
+                  color: #e5e5e5;
+                  background-color: #000000;
+                }
+              }
+            }
+          }
+        }
+      }
+
+      .columns {
+        .column {
+          video {
+            &.vid {
+              &.zoom {
+                //   position: absolute;
+                //   height: auto;
+                //   width: 400px;
+                //   top: 10px;
+                //   left: 10px;
+                border: 1px red solid !important;
+              }
+            }
+          }
+
+          &:hover {
+            cursor: pointer;
+          }
+        }
+      }
+    }
+  }
+}
